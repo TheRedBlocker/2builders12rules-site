@@ -1,0 +1,183 @@
+body,
+html {
+  height: 100vh;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #7c533d;
+}
+
+.container {
+  background-color: #7c533d;
+  height: 100%;
+}
+
+.header {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  background-color: #742148;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  align-items: center;
+  justify-content: space-around;
+  user-select: none;
+}
+
+.header h1 {
+  color: black;
+  font-size: 30px;
+}
+
+.header a {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.btn-select {
+  display: flex;
+  height: 10%;
+  width: 100%;
+  background-color: black;
+  justify-content: space-evenly;
+}
+
+.btn-select button {
+  height: 50px;
+  background-color: #ab2242;
+  border-radius: 15px;
+  border-width: 0px;
+  padding: 10px 50px;
+  margin: 10px;
+  user-select: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.list {
+  overflow-y: scroll;
+}
+
+.disabled {
+  display: none;
+}
+
+.title {
+  display: vertical;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  user-select: none;
+  padding: 10px;
+}
+
+.bans {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.mutes {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+#ban-list {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  order: 1;
+  text-align: right;
+  margin-left: 200px;
+}
+
+#ban-hyphens {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  order: 2;
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align: center;
+}
+
+#ban-rules {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  order: 3;
+  margin-right: 200px;
+}
+
+#ban-info {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+#mute-list {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  order: 1;
+  text-align: right;
+  margin-left: 100px;
+}
+
+#mute-rules {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  order: 5;
+  margin-right: 100px;
+}
+
+#mute-status {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  order: 2;
+  text-align: center;
+}
+
+#mute-hyphens1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  order: 2;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+#mute-hyphens2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  order: 4;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+#mute-info {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+#punishmentTtl {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+#punishmentTxt {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+  padding-left: 300px;
+  padding-right: 200px;
+}
+
+#rulesTtl {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+#rulesTxt {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+  padding-left: 300px;
+  padding-right: 200px;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+}
