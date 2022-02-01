@@ -57,6 +57,26 @@ html {
   color: white;
 }
 
+#home-btn {
+  order: 1;
+}
+
+#punishments-btn {
+  order: 4;
+}
+
+#rules-btn {
+  order: 5;
+}
+
+#ban-btn {
+  order: 2;
+}
+
+#mute-btn {
+  order: 3;
+}
+
 .list {
   overflow-y: scroll;
 }
