@@ -1,0 +1,13 @@
+{
+    "user": "<username>",
+    "password": "<password>",
+    "host": "<ip>",
+    "port": 21,
+    "localRoot": "/html/2builders12rules-site",
+    "remoteRoot": "/queueaddict.org-redirect/",
+    "include": ["*", "*/*", ".*", "*/.*", "*/*/.*"],
+    "exclude": ["node_modules/**", "node_modules/**/.*", ".git/**"],
+    "deleteRemote": false,
+    "forcePasv": true,
+    "sftp": false
+}
