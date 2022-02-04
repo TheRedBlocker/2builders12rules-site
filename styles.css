@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto&family=Syne+Tactile&display=swap');
+
 body,
 html {
   height: 100vh;
   width: 100%;
   margin: 0px;
   padding: 0px;
-  background-color: #36393e;
+  background: linear-gradient(295deg, #ff9900 0%, #ff0000 40%, #5e0000 60%, #8d1919 100%) fixed; 
 }
 
 .container {
@@ -17,8 +19,8 @@ html {
   height: 10%;
   width: 100%;
   display: flex;
-  background-color: #742148;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(295deg, rgba(255,0,228,1) 0%, rgba(255,0,0,1) 34%, rgba(201,0,255,1) 69%, rgba(255,0,0,1) 91%); 
+  font-family: 'Anton', sans-serif;
   align-items: center;
   justify-content: space-around;
   user-select: none;
@@ -39,7 +41,7 @@ html {
   display: flex;
   height: 10%;
   width: 100%;
-  background-color: black;
+  background: radial-gradient(circle, rgb(185, 0, 0) 0%, rgba(130,0,0,1) 46%); 
   justify-content: space-evenly;
 }
 
@@ -51,10 +53,16 @@ html {
   padding: 10px 50px;
   margin: 10px;
   user-select: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-family: 'Syne Tactile', cursive;
   font-weight: bold;
   font-size: 16px;
   color: white;
+}
+
+.nav-btn:hover {
+  cursor: pointer;
+  background: linear-gradient(140deg, #ab2242 1%, #690000 100%); 
+  color:#ab2242
 }
 
 #home-btn {
@@ -90,7 +98,7 @@ html {
   text-align: center;
   margin-left: 100px;
   margin-right: 100px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto', sans-serif;
   user-select: none;
   padding: 10px;
 }
@@ -108,14 +116,14 @@ html {
 }
 
 #ban-list {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto', sans-serif;
   order: 1;
   text-align: right;
   margin-left: 200px;
 }
 
 #ban-hyphens {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto', sans-serif;
   order: 2;
   margin-left: 25px;
   margin-right: 25px;
@@ -123,77 +131,77 @@ html {
 }
 
 #ban-rules {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto', sans-serif;
   order: 3;
   margin-right: 200px;
 }
 
 #ban-info {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 
 #mute-list {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto', sans-serif;
   order: 1;
   text-align: right;
   margin-left: 100px;
 }
 
 #mute-rules {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto', sans-serif;
   order: 5;
   margin-right: 100px;
 }
 
 #mute-status {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto', sans-serif;
   order: 2;
   text-align: center;
 }
 
 #mute-hyphens1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto', sans-serif;
   order: 2;
   margin-left: 25px;
   margin-right: 25px;
 }
 
 #mute-hyphens2 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto', sans-serif;
   order: 4;
   margin-left: 25px;
   margin-right: 25px;
 }
 
 #mute-info {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 
 #punishmentTtl {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   padding-left: 200px;
   padding-right: 200px;
 }
 
 #punishmentTxt {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: left;
   padding-left: 300px;
   padding-right: 200px;
 }
 
 #rulesTtl {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   padding-left: 200px;
   padding-right: 200px;
 }
 
 #rulesTxt {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: left;
   padding-left: 300px;
   padding-right: 200px;
@@ -202,4 +210,25 @@ html {
 .info {
   display: flex;
   justify-content: center;
+}
+
+.footer-waves {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  display: none;
+}
+
+.footer-waves svg {
+  bottom: 0;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 226px;
+}
+
+.footer-waves .shape-fill {
+  fill: #4E0101;
 }
