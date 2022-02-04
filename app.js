@@ -421,6 +421,7 @@ window.onload = async function () {
     rulesTxt.classList.add("disabled");
     rulesTtl.classList.add("disabled");
 
+    document.getElementById('footer-waves').style.display = "none";
     document.title = "2builders12rules Info";
   };
 
@@ -447,6 +448,7 @@ window.onload = async function () {
     rulesTxt.classList.add("disabled");
     rulesTtl.classList.add("disabled");
 
+    document.getElementById('footer-waves').style.display = "none";
     document.title = "2b2t Punishments";
   };
 
@@ -473,6 +475,7 @@ window.onload = async function () {
     rulesTxt.classList.remove("disabled");
     rulesTtl.classList.remove("disabled");
 
+    document.getElementById('footer-waves').style.display = "none";
     document.title = "2b2t Rules";
   };
 
@@ -499,6 +502,7 @@ window.onload = async function () {
     rulesTxt.classList.add("disabled");
     rulesTtl.classList.add("disabled");
 
+    document.getElementById('footer-waves').style.display = "block";
     document.title = "2b2t Prio Ban List";
   };
 
@@ -525,6 +529,7 @@ window.onload = async function () {
     rulesTxt.classList.add("disabled");
     rulesTtl.classList.add("disabled");
 
+    document.getElementById('footer-waves').style.display = "block";
     document.title = "2b2t Mute List";
   };
 
