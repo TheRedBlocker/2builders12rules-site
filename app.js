@@ -1,15 +1,17 @@
-async function loadJSON (url) {
-  const res = await fetch(url);
-  return await res.json();
+function loadJSON(theUrl, callback)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = function() { 
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+            callback(xmlHttp.responseText);
+    }
+    xmlHttp.open("GET", theUrl, true); // true for asynchronous 
+    xmlHttp.send(null);
 }
 var mutesJson;
 var bansJson;
-loadJSON('/data/mutes.json').then(data => {
-  mutesJson = data
-});
-loadJSON('/data/bans.json').then(data => {
-  bansJson = data;
-});
+loadJSON('/data/mutes.json',  function(err, data) { if (err != null) { console.error(err); } else { mutesJson = data } })
+loadJSON('/data/bans.json',  function(err, data) { if (err != null) { console.error(err); } else { bansJson = data } })
 window.onload = async function () {
   const banBtn = document.getElementById("ban-btn");
   const muteBtn = document.getElementById("mute-btn");
