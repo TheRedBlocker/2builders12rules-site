@@ -13,5 +13,5 @@ Current pages on the site:
 
 ## API
 
-https://api.cokesniffer.org/bans/?username=<username>  
-https://api.cokesniffer.org/mutes/?username=<username>
+https://api.cokesniffer.org/bans/?username=<\username>  
+https://api.cokesniffer.org/mutes/?username=<\username>
