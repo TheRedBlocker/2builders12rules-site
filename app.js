@@ -10,8 +10,8 @@ function loadJSON(theUrl, callback)
 }
 var mutesJson;
 var bansJson;
-loadJSON('/data/mutes.json',  function(err, data) { if (err != null) { console.error(err); } else { mutesJson = data } })
-loadJSON('/data/bans.json',  function(err, data) { if (err != null) { console.error(err); } else { bansJson = data } })
+loadJSON('/data/mutes.json',  function(data) { mutesJson = data })
+loadJSON('/data/bans.json',  function(data) { bansJson = data })
 window.onload = async function () {
   const banBtn = document.getElementById("ban-btn");
   const muteBtn = document.getElementById("mute-btn");
