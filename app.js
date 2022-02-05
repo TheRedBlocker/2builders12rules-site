@@ -19,8 +19,8 @@ var getJSON = function(url, callback) {
 };
 var mutesJson;
 var bansJson;
-getJSON('/data/mutes.json',  function(err, data) { if (err != null) { console.error(err); } else { mutesJson = data } })
-getJSON('/data/bans.json',  function(err, data) { if (err != null) { console.error(err); } else { bansJson = data } })
+getJSON('http://cokesniffer.org/data/mutes.json',  function(err, data) { if (err != null) { console.error(err); } else { mutesJson = data } })
+getJSON('http://cokesniffer.org/data/bans.json',  function(err, data) { if (err != null) { console.error(err); } else { bansJson = data } })
 
 window.onload = async function () {
   const banBtn = document.getElementById("ban-btn");
