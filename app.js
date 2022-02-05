@@ -1,26 +1,15 @@
-var getJSON = function(url, callback) {
-
-  var xmlhttprequest = new XMLHttpRequest();
-  xmlhttprequest.open('GET', url, true);
-  xmlhttprequest.responseType = 'json';
-
-  xmlhttprequest.onload = function() {
-
-      var status = xmlhttprequest.status;
-
-      if (status == 200) {
-          callback(null, xmlhttprequest.response);
-      } else {
-          callback(status, xmlhttprequest.response);
-      }
-  };
-
-  xmlhttprequest.send();
-};
+async function loadJSON (url) {
+  const res = await fetch(url);
+  return await res.json();
+}
 var mutesJson;
 var bansJson;
-getJSON('http://cokesniffer.org/data/mutes.json',  function(err, data) { if (err != null) { console.error(err); } else { mutesJson = data } })
-getJSON('http://cokesniffer.org/data/bans.json',  function(err, data) { if (err != null) { console.error(err); } else { bansJson = data } })
+loadJSON('/data/mutes.json').then(data => {
+  mutesJson = data;
+});
+loadJSON('/data/bans.json').then(data => {
+  bansJson = data;
+});
 
 window.onload = async function () {
   const banBtn = document.getElementById("ban-btn");
