@@ -2,15 +2,16 @@ async function loadJSON (url) {
   const res = await fetch(url);
   return await res.json();
 }
-var mutesJson;
-var bansJson;
+var mutesJson = [];
+var bansJson = [];
 loadJSON('/data/mutes.json').then(data => {
-  mutesJson = data;
+  mutesJson.push(data);
 });
 loadJSON('/data/bans.json').then(data => {
-  bansJson = data;
+  bansJson.push(data);
 });
-
+mutesJson = mutesJson[0];
+bansJson = bansJson[0];
 window.onload = async function () {
   const banBtn = document.getElementById("ban-btn");
   const muteBtn = document.getElementById("mute-btn");
