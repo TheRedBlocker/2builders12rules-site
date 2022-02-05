@@ -40,7 +40,7 @@ html {
   height: 10%;
   width: 100%;
   background-color: black;
-  justify-content: space-evenly;
+  align-items: center;
 }
 
 .btn-select button {
@@ -49,12 +49,14 @@ html {
   border-radius: 15px;
   border-width: 0px;
   padding: 10px 50px;
-  margin: 10px;
   user-select: none;
+  margin: 0px 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   font-size: 16px;
   color: white;
+  flex: 1;
+  cursor: pointer;
 }
 
 #home-btn {
