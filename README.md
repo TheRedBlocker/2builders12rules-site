@@ -10,3 +10,8 @@ Current pages on the site:
 - Prio Ban List
 - 2b2t Rules
 - 2b2t Punishments
+
+## API
+
+https://api.cokesniffer.org/bans/?username=<username>  
+https://api.cokesniffer.org/mutes/?username=<username>
