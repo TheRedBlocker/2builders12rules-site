@@ -221,3 +221,4 @@ var bans = [
   { "username": "Zoidy7", "rules": "none" },
   { "username": "zzeekk_", "rules": "2" }
 ]
+module.exports = { bans: bans };

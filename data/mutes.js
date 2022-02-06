@@ -154,3 +154,4 @@ var mutes = [
   { "username": "zaynety", "type": "Hard", "rules": "none" },
   { "username": "zzeekk_", "type": "Soft", "rules": "none" }
 ]
+module.exports = { mutes: mutes };
