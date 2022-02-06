@@ -1,6 +1,6 @@
 # 2builders12rules-site
 
-https://cokesniffer.org   
+<a href="http://cokesniffer.org/" target="_blank"></a>  
 
 ## Site Info
 
