@@ -168,10 +168,10 @@ window.onload = async function () {
   for (let i = 0; i < bansJson.length; i++) {
     banListArrNames.push(bansJson[i].username);
     banListArrHyphens.push("-");
-    bansJson[i].rules!='none' ? banListArrRules.push(bansJson[i].rules) : banListArrRules.push("None Known");
+    bansJson[i].rules != "none" ? banListArrRules.push(bansJson[i].rules) : banListArrRules.push("None Known");
   }
 
-  let banInfoStr = `Current Known Prio Bans: ${bansJson.length} <br> Last Updated: 29 January 2022`;
+  let banInfoStr = `Current Known Prio Bans: ${bansJson.length} <br> Last Updated: 4 February 2022`;
 
   banList.innerHTML = banListArrNames.join("<br>");
   banHyphens.innerHTML = banListArrHyphens.join("<br>");
@@ -187,10 +187,10 @@ window.onload = async function () {
     muteListArrNames.push(mutesJson[i].username);
     muteListArrHyphens.push("-");
     muteListArrStatus.push(mutesJson[i].type);
-    mutesJson[i].rules!='none' ? muteListArrRules.push(mutesJson[i].rules) : muteListArrRules.push("None Known");
+    mutesJson[i].rules != "none" ? muteListArrRules.push(mutesJson[i].rules) : muteListArrRules.push("None Known");
   }
 
-  let muteInfoStr = `Current Known Mutes: ${mutesJson.length} <br> Last Updated: 29 January 2022`;
+  let muteInfoStr = `Current Known Mutes: ${mutesJson.length} <br> Last Updated: 4 February 2022`;
 
   muteList.innerHTML = muteListArrNames.join("<br>");
   muteHyphens1.innerHTML = muteListArrHyphens.join("<br>");
