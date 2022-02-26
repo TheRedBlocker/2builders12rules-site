@@ -171,7 +171,7 @@ window.onload = async function () {
     bansJson[i].rules != "none" ? banListArrRules.push(bansJson[i].rules) : banListArrRules.push("None Known");
   }
 
-  let banInfoStr = `Current Known Prio Bans: ${bansJson.length} <br> Last Updated: 17 February 2022`;
+  let banInfoStr = `Current Known Prio Bans: ${bansJson.length} <br> Last Updated: 26 February 2022`;
 
   banList.innerHTML = banListArrNames.join("<br>");
   banHyphens.innerHTML = banListArrHyphens.join("<br>");
@@ -190,7 +190,7 @@ window.onload = async function () {
     mutesJson[i].rules != "none" ? muteListArrRules.push(mutesJson[i].rules) : muteListArrRules.push("None Known");
   }
 
-  let muteInfoStr = `Current Known Mutes: ${mutesJson.length} <br> Last Updated: 17 February 2022`;
+  let muteInfoStr = `Current Known Mutes: ${mutesJson.length} <br> Last Updated: 26 February 2022`;
 
   muteList.innerHTML = muteListArrNames.join("<br>");
   muteHyphens1.innerHTML = muteListArrHyphens.join("<br>");
