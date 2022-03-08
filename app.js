@@ -165,13 +165,15 @@ window.onload = async function () {
   //var mutesJson = mutesJsonP.innerText;
   //var bansJson = bansJsonP.innerText;
 
+  var currentDate = "7 March 2022";
+
   for (let i = 0; i < bansJson.length; i++) {
     banListArrNames.push(bansJson[i].username);
     banListArrHyphens.push("-");
     bansJson[i].rules != "none" ? banListArrRules.push(bansJson[i].rules) : banListArrRules.push("None Known");
   }
 
-  let banInfoStr = `Current Known Prio Bans: ${bansJson.length} <br> Last Updated: 26 February 2022`;
+  let banInfoStr = `Current Known Prio Bans: ${bansJson.length} <br> Last Updated: ${currentDate}`;
 
   banList.innerHTML = banListArrNames.join("<br>");
   banHyphens.innerHTML = banListArrHyphens.join("<br>");
@@ -190,7 +192,7 @@ window.onload = async function () {
     mutesJson[i].rules != "none" ? muteListArrRules.push(mutesJson[i].rules) : muteListArrRules.push("None Known");
   }
 
-  let muteInfoStr = `Current Known Mutes: ${mutesJson.length} <br> Last Updated: 26 February 2022`;
+  let muteInfoStr = `Current Known Mutes: ${mutesJson.length} <br> Last Updated: ${currentDate}`;
 
   muteList.innerHTML = muteListArrNames.join("<br>");
   muteHyphens1.innerHTML = muteListArrHyphens.join("<br>");
