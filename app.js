@@ -165,7 +165,7 @@ window.onload = async function () {
   //var mutesJson = mutesJsonP.innerText;
   //var bansJson = bansJsonP.innerText;
 
-  var currentDate = "7 March 2022";
+  var currentDate = "15 March 2022";
 
   for (let i = 0; i < bansJson.length; i++) {
     banListArrNames.push(bansJson[i].username);
